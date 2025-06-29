@@ -1,14 +1,22 @@
 # 🌿 Plant Disease Image Classifier
 
-This is a deep learning-based image classifier that detects different types of plant diseases from leaf images using a Convolutional Neural Network (CNN). It was developed using TensorFlow and deployed using Gradio.
+This is a deep learning-based image classifier that detects different types of plant diseases from leaf images using a Convolutional Neural Network (CNN). It was developed using TensorFlow, trained in Google Colab, and deployed using Gradio + Hugging Face.
 
 ✅ Built as part of an internship project by **Ansal CM**.
 
 ---
 
-## 🚀 Live Demo (Hugging Face)
+## 🚀 Live Demo
 
-👉 [Try the Deployed Model on Hugging Face](https://huggingface.co/spaces/ansalcm/image-classifier)
+👉 [🟢 Try the App on Hugging Face Spaces](https://ansalcm-image-classifier.hf.space/?__theme=system&deep_link=gXI3XOzaG8A)
+
+---
+
+## 📓 Google Colab Notebook
+
+🧪 [Open Training Notebook in Google Colab](https://colab.research.google.com/drive/1tCyfHH22Fho_g7qipaWmNjq-lPrp8I9s?usp=sharing)
+
+This notebook contains the full training pipeline for the image classifier including dataset preprocessing, model training, evaluation, and saving.
 
 ---
 
@@ -27,26 +35,16 @@ This is a deep learning-based image classifier that detects different types of p
 
 GitHub does not support large files over 25MB, so the model is hosted externally.
 
-🔗 **[Download image_classifier_model.h5 from Google Drive](https://drive.google.com/uc?id=1dAlFElq4-0Y_IwzWcY-xLM8x0rS8IYHz)**
+🔗 [Download image_classifier_model.h5 from Google Drive](https://drive.google.com/uc?id=1dAlFElq4-0Y_IwzWcY-xLM8x0rS8IYHz)
 
 After downloading, place the file in the same folder as `app.py`.
 
 ---
 
-## 🧠 Model Details
-
-- Framework: TensorFlow / Keras
-- Input size: 128 × 128
-- Output: Softmax probabilities for each class
-- Activation: ReLU + Softmax
-- Trained on: Leaf images from Kaggle dataset
-
----
-
-## ▶️ How to Run the App Locally
-
-### 1. Clone the Repository
+## ▶️ How to Run Locally
 
 ```bash
 git clone https://github.com/your-username/plant-disease-classifier.git
 cd plant-disease-classifier
+pip install -r requirements.txt
+python app.py
