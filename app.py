@@ -35,8 +35,8 @@ interface = gr.Interface(
     fn=predict,
     inputs=gr.Image(type="pil"),
     outputs=gr.Label(num_top_classes=3),
-    title="Plant Disease Classifier 🌿",
-    description="Upload a leaf image to detect disease type."
+    title="Plant Image Classifier 🌿",
+    description="Upload a leaf image to detect plant type."
 )
 
 interface.launch()
